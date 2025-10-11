@@ -6,18 +6,64 @@ body {
   text-align: center; 
 }
 
-h1, p {
+h1 {
 
   font-size: 40px;
 
    position: relative;
-      top: 400px;
-      right: 500px;
+      top: 300px;
+      right: 300px;
 }
 
-img {
+p {
+
+  font-size: 60px;
+
+   position: relative;
+      top: 300px;
+      right: 300px;
+}
+
+.main_img {
 
   position: relative;
   left: 500px;
+  bottom: 200px;
   
 }
+
+.navbar {
+  background-color: black; /* optional */
+  position: fixed; /* stays at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centers the nav horizontally */
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* makes list items line up horizontally */
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px; /* space between items */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #555; /* optional hover effect */
+}
+
