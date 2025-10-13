@@ -67,3 +67,29 @@ p {
   background-color: #555; /* optional hover effect */
 }
 
+.abt {
+  position: relative;
+  left:0px;
+  top: 0px;
+}
+
+.abt_2 {
+
+  font-size: 20px;
+  position: relative;
+  left:0px;
+  top: 0px;
+}
+
+.edu {
+  font-size: 40px;
+  position: relative;
+  right: 600px;
+  bottom: 100px;
+}
+.exp {
+  font-size: 40px;
+  position: relative;
+  left:600px;
+  bottom: 100px;
+}
