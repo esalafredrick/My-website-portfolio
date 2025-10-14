@@ -3,93 +3,40 @@ body {
   font-style: normal;
   color: rgb(255, 255, 255);
   background-color: black; 
-  text-align: center; 
-}
-
-h1 {
-
-  font-size: 40px;
-
-   position: relative;
-      top: 300px;
-      right: 300px;
-}
-
-p {
-
-  font-size: 60px;
-
-   position: relative;
-      top: 300px;
-      right: 300px;
-}
-
-.main_img {
-
-  position: relative;
-  left: 500px;
-  bottom: 200px;
   
 }
 
-.navbar {
-  background-color: black; /* optional */
-  position: fixed; /* stays at top */
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center; /* centers the nav horizontally */
-  z-index: 1000;
+.lg {
+
+  font-size: 30px;
+
+  position: absolute;
+  left: 400px;
+  top: 10px;
 }
 
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; /* makes list items line up horizontally */
-  justify-content: center;
+.lg_img {
+
+  position: absolute;
+  left: 280px;
 }
 
-.navbar li {
-  margin: 0 15px; /* space between items */
-}
+.intro1 {
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 15px 20px;
-  display: block;
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: #555; /* optional hover effect */
-}
-
-.abt {
-  position: relative;
-  left:0px;
-  top: 0px;
-}
-
-.abt_2 {
-
-  font-size: 20px;
-  position: relative;
-  left:0px;
-  top: 0px;
-}
-
-.edu {
   font-size: 40px;
-  position: relative;
-  right: 600px;
-  bottom: 100px;
+  position: absolute;
+  left: 300px;
+  top: 500px;
 }
-.exp {
-  font-size: 40px;
-  position: relative;
-  left:600px;
-  bottom: 100px;
+
+.me {
+
+  position: absolute;
+  right: 300px;
+  top: 150px;
 }
+
+
+
+
+
