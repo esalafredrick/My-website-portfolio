@@ -2,52 +2,176 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Portfolio Website</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./scripts.js"></script>
-  <link rel="icon" type="image/jpg" href="./imgs/1-removebg-preview.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/1-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="header">
-    <a href="#" class="logo"><span class="ef">Esala Fredrick</span></a>
+    <header class="header">
+        <ul class="nav_bar">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about-details">About</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#certificates">Certificates</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
 
-    <ul class="nav_bar">
-      <li>
-        <a href="#home">Home</a>
-      </li>
+    <section id="home" class="home">
+        <div class="abt-container">
+            <img class="my-img" src="imgs/Adobe Express - file2.png" height="300">
 
-      <li>
-        <a href="#about">About</a>
-      </li>
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Esala Fredrick</h1>
+                    <span>Project Manager / Full Stack Developer</span>
+                </div>
 
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
+                <div class="btn-grp">
+                    <button class="btn">Contact Me</button>
+                    <button class="btn">Download CV</button>
+                </div>
 
-      <li>
-        <a href="#certificates">Certificates</a>
-      </li>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/esalafredrick" target="_blank" class="icn">
+                        <img src="imgs/linkedin_3992606.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/esalafredrick" target="_blank" class="icn">
+                        <img src="imgs/instagram_1384063.png" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/esalafredrick" target="_blank" class="icn">
+                        <img src="imgs/icons8-github-64 (1).png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
+    <section id="about-details" class="about-details-section">
+        <h2 class="section-title">About</h2>
+        <div class="about-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <span>Education</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
 
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
+                <div class="grid-card">
+                    <span>Specialization</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </ul>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="about-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <span>Soft Skills</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
 
-    
+                <div class="grid-card">
+                    <span>Hard Skills</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <button class="git-btn">View Github</button>
-  </header>
-  
+    <section id="certificates" class="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <div class="about-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <span>Soft Skills</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
+
+                <div class="grid-card">
+                    <span>Hard Skills</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="about-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <span>Soft Skills</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
+
+                <div class="grid-card">
+                    <span>Hard Skills</span>
+                    <h3>Bla Bla Hello</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempore veritatis rem facilis explicabo mollitia? Nesciunt velit enim ratione voluptatem repudiandae. Earum accusantium vero recusandae quis totam, sapiente in id.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="about-info">
+            <div class="grid-contact">
+                <div class="grid-card">
+
+                    <div class="container-cont">
+                        <form>
+                            <input type="text" id="first-name" placeholder="First Name" required>
+                            <input type="text" id="last-name" placeholder="Last Name" required>
+                            <input type="text" id="email" placeholder="Email" required>
+                            <input type="text" id="phone-no" placeholder="Mobile" required>
+                            <textarea required id="msg" placeholder="Your Message"></textarea>
+                        </form>
+                    </div>
+
+                    <div class="btn-grp-contact">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="cpyrit">© All Rights Reserved | Esala Fredrick</p>
+    </footer>
 
 </body>
 
