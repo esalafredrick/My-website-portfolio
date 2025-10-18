@@ -104,7 +104,7 @@ section {
 }
 
 .info-box span {
-    background: linear-gradient(to right, rgb(50, 205, 50), rgb(238, 0, 4));
+    background: linear-gradient(to right, rgb(0, 17, 255), rgb(255, 0, 0));
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -158,7 +158,7 @@ section {
 }
 
 .about-info {
-    width: 100%; 
+    width: 100%;
     max-width: 900px;
     display: flex;
     align-items: center;
@@ -193,11 +193,46 @@ section {
 .grid-card span {
     font-size: 1.5rem;
     font-weight: 500;
-    background: linear-gradient(to right, rgb(50, 205, 50), rgb(238, 0, 4));
+    background: linear-gradient(to right, rgb(0, 17, 255), rgb(255, 0, 0));
     background-clip: text;
     color: transparent;
 }
 
+.skill-icons-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.25rem;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-item p {
+    font-size: 0.75rem; 
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+.skill-item img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-item img:hover {
+    transform: scale(1.15);
+}
+
+.grid-card:hover .skill-icons-container {
+    border-color: rgba(255, 255, 255, 0.3);
+}
 
 .contact {
     display: flex;
@@ -219,7 +254,7 @@ section {
 
 .contact .grid-card:hover {
     transform: scale(1.02);
-    background-color: initial; 
+    background-color: initial;
     color: initial;
 }
 
@@ -316,15 +351,19 @@ footer {
     section {
         padding: 5rem 5%;
     }
+
     .grid {
         grid-template-columns: 1fr;
     }
+
     .nav_bar {
         gap: 1.5rem;
     }
+
     .info-box h1 {
         font-size: 3rem;
     }
+
     .info-box span {
         font-size: 1.5rem;
     }
@@ -335,6 +374,7 @@ footer {
         grid-template-columns: 1fr;
         max-width: 100%;
     }
+
     .container-cont input[type="text"],
     .container-cont textarea,
     #email,
@@ -342,7 +382,9 @@ footer {
     #msg {
         grid-column: 1 / 1;
     }
+
     .btn-grp-contact {
         text-align: center;
     }
 }
+
