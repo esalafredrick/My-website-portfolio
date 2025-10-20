@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem; 
     background-color: black;
     backdrop-filter: blur(8px);
     color: white;
@@ -28,15 +28,32 @@ header {
     z-index: 1000;
 }
 
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 0 0.5rem;
+    line-height: 1;
+}
+
 .nav_bar {
     display: flex;
-    gap: 5rem;
+    gap: 2rem; 
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 li a {
     position: relative;
     color: white;
     font-size: 1rem;
+    white-space: nowrap; 
 }
 
 li a:hover {
@@ -81,6 +98,9 @@ section {
 .my-img {
     border-radius: 15%;
     border: 0.8px solid;
+    max-width: 300px; 
+    width: 100%; 
+    height: auto;
 }
 
 .info-box {
@@ -108,11 +128,14 @@ section {
     background-clip: text;
     color: transparent;
     font-size: 2rem;
+    text-align: center;
 }
 
 .btn-grp {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .btn {
@@ -249,14 +272,16 @@ section {
     width: 100%;
     background-color: initial;
     color: initial;
-    transition: transform 0.2s ease-in-out;
+   
 }
 
+
 .contact .grid-card:hover {
-    transform: scale(1.02);
+    transform: none;
     background-color: initial;
     color: initial;
 }
+
 
 .container-cont {
     width: 100%;
@@ -340,34 +365,112 @@ footer {
     opacity: 0.8;
 }
 
-@media (max-width: 1200px) {
-    .home .abt-container {
-        flex-direction: column;
-        gap: 3rem;
+
+@media (min-width: 1600px) {
+    section {
+        padding: 8rem 20%;
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
+    .home .abt-container {
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 2rem;
+    }
+    
+    .my-img {
+        max-width: 250px;
+    }
+
     section {
-        padding: 5rem 5%;
+        padding: 5rem 8%;
     }
 
-    .grid {
-        grid-template-columns: 1fr;
+    .section-title {
+        font-size: 3.5rem;
     }
+}
 
+
+
+@media (max-width: 768px) {
+    header {
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    
+    .hamburger-icon {
+        display: block;
+        order: 2; 
+        padding: 0.25rem 0.5rem;
+    }
+    
+    
     .nav_bar {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1rem 0;
+        height: 0;
+        overflow: hidden;
+        
+        transition: height 0.3s ease, opacity 0.3s ease; 
+        gap: 0.5rem;
+        opacity: 0; 
+        pointer-events: none; 
+    }
+    
+    .nav_bar li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    
+    #menu-toggle:checked ~ .nav_bar {
+        height: 320px; 
+        padding: 1rem 0;
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+
+    section {
+        padding: 7rem 5%;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr; 
         gap: 1.5rem;
     }
 
     .info-box h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .info-box span {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 }
+
 
 @media (max-width: 650px) {
     .container-cont form {
@@ -386,16 +489,50 @@ footer {
     .btn-grp-contact {
         text-align: center;
     }
+    
+    .info-box h1 {
+        font-size: 2rem;
+    }
+    
+    .info-box span {
+        font-size: 1rem;
+    }
+    
+    .btn-grp {
+        flex-direction: column;
+    }
 }
 
-/* From Uiverse.io by eduardo-amaro-maciel */
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .grid-card {
+        padding: 1.5rem;
+    }
+    
+    
+    .hamburger-icon {
+        font-size: 1.8rem;
+    }
+    
+    .nav_bar a {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
 .scroll-1::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
+    width: 10px; 
+    height: 10px;
 }
 
 .scroll-1::-webkit-scrollbar-thumb {
-    border-radius: 20px;
+    border-radius: 10px;
     background: #000000;
 }
 
@@ -420,7 +557,7 @@ footer {
 }
 
 .container .card {
-    flex: 0 0 80%;
+    flex: 0 0 90%; 
     max-width: 400px;
     overflow: hidden;
     border-radius: 1rem;
@@ -428,6 +565,13 @@ footer {
     scroll-snap-align: start;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+@media (min-width: 600px) {
+    .container .card {
+        flex: 0 0 45%; 
+    }
+}
+
 
 .certificates .card .card__image {
     flex: 1;
@@ -450,6 +594,18 @@ footer {
     height: 250px;
     background-size: cover;
     background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+.projects .card .card__image img {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
 }
 
 
@@ -477,6 +633,7 @@ footer {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .btn-card-grp .btn {
