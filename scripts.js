@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (downloadCvBtn) {
         downloadCvBtn.addEventListener('click', () => {
             
-            const cvFilePath = './assets/files/EsalaFredrick_CV.pdf';
+            const cvFilePath = './assets/Esala_Fredrick_BIO_2025.pdf';
             
             
             const link = document.createElement('a');
